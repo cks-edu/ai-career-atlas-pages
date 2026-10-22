@@ -12,4 +12,4 @@ The Pages workflow deploys only `index.html`, `favicon.svg`, `.nojekyll` and `as
 
 Learner Settings keeps routine and reading style in one place, with job seeking as a separate preference. Career, topic, handbook chapter and lab depth are preserved in relevant links. Calendar links return to the intended career/topic. Laya is not included.
 
-Updated 22 October 2026 with the authored tutor boundary and adversarial-response regressions. Actual Qwen3-0.6B selection, study modes, profiles, source/Focus links and mobile layout were checked in the desktop in-app browser. Other device/browser combinations, live cloud deployments and external job availability were not validated. Source release: ca881f8.
+Updated 22 October 2026 with the authored tutor boundary and adversarial-response regressions. Actual Qwen3-0.6B selection, study modes, profiles, source/Focus links and mobile layout were checked in the desktop in-app browser. Other device/browser combinations, live cloud deployments and external job availability were not validated. Source release: f9e0b85. The worker URL includes its build hash to avoid stale cached code after a refresh.

@@ -50862,6 +50862,13 @@ const LearnerProfile=(()=>{
 })();
 
 // END GENERATED LEARNER PROFILE
+// BEGIN GENERATED TUTOR RUNTIME DATA
+const TUTOR_RUNTIME = {
+  "runtime": "@mlc-ai/web-llm@0.2.86",
+  "sha256": "cefd8168c082cc76ef91ff760562f2e4bb99a3577a212527542c47b994f72984",
+  "bytes": 6135275
+};
+// END GENERATED TUTOR RUNTIME DATA
 // BEGIN GENERATED TUTOR LESSONS DATA
 const TUTOR_LESSONS = {
   "reviewed": "2026-10-22",
@@ -51166,7 +51173,7 @@ const AIStudyTutor=(()=>{
  function readLesson(id){const l=lessons().find(x=>x.id===id);if(!l)return;if(status==='generating')kill();const lessonPath=DIRECTORY_DATA.paths.find(p=>p.id===l.career)||path();sources=TutorEngine.retrieve(TutorEngine.corpus(lessonPath,DIRECTORY_DATA.references,PORTFOLIO_DATA.paths[lessonPath.id],LearnerProfile.terms),l.title+' '+l.aliases.join(' '));evidence();currentLesson=l;node('tutorLesson').value=id;answer='';quiz=null;output();notice('Showing a site-authored '+(mode==='quiz'?'practice question':mode==='hint'?'hint':'explanation')+'. Follow the source for context.');}
  function kill(){clearTimeout(watchdog);worker?.terminate();worker=null;active=++seq;status='off';node('tutorProgress').hidden=true;buttons()}
  function fail(message){kill();notice(message+' The course pages remain available. Close other GPU-heavy tabs or use a WebGPU-capable browser, or keep using the study notes without AI.');}
- function startWorker(){worker=new Worker(new URL('assets/tutor-worker.js',location.href),{type:'module'});worker.onerror=e=>fail('The local lesson finder could not run.');worker.onmessage=({data:m})=>{
+ function startWorker(){worker=new Worker(new URL('assets/tutor-worker.js?v='+TUTOR_RUNTIME.sha256,location.href),{type:'module'});worker.onerror=e=>fail('The local lesson finder could not run.');worker.onmessage=({data:m})=>{
   if(m.id!==active)return;
   if(m.type==='progress'&&status==='loading'){node('tutorProgress').value=Math.max(0,Math.min(1,m.progress||0));notice('Loading Qwen on your device: '+m.text)}
   if(m.type==='ready'&&status==='loading'){clearTimeout(watchdog);status='ready';node('tutorProgress').hidden=true;notice('Qwen lesson suggestions are ready. It can suggest reading, but cannot verify or write answers.');buttons()}
