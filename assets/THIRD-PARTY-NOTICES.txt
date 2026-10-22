@@ -1,0 +1,6 @@
+loglevel — Tim Perry — MIT. See LOGLEVEL-LICENSE.txt.
+WebLLM 0.2.86 — MLC AI — Apache-2.0. See WEBLLM-LICENSE.txt.
+Qwen3 model weights are downloaded separately on opt-in from the MLC AI Hugging Face repository. Qwen3-0.6B and Qwen3-1.7B: Qwen Team, Alibaba Cloud, Apache-2.0.
+https://huggingface.co/Qwen/Qwen3-0.6B
+https://huggingface.co/Qwen/Qwen3-1.7B
+https://github.com/mlc-ai/web-llm

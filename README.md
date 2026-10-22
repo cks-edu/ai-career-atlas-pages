@@ -4,6 +4,6 @@ Public website: https://cks-edu.github.io/ai-career-atlas-pages/
 
 This repository publishes the static website: 65 AI and GenAI career guides, hands-on practice, portfolio projects, mock interviews, a study planner, a focus room and calendar exports.
 
-Study progress and notes are stored in the learner's browser, not in this repository. Calendar downloads are snapshots, not a calendar-account connection. No browser-based AI model or chat assistant is integrated.
+Study progress and notes are stored in the learner's browser, not in this repository. Calendar downloads are snapshots, not a calendar-account connection. An optional Qwen tutor runs locally with WebGPU after an explicit model download. There is no inference server or AI API bill; device compatibility and answer accuracy vary. Explanations, hints and practice quizzes use excerpts from the selected career guide. Learner profiles adapt vocabulary and tutor wording. Focus mode offers 25/5, 10/2 and 50/10 rhythms with saved notes.
 
-The Pages workflow deploys only `index.html`, `favicon.svg` and `.nojekyll` from `main`.
+The Pages workflow deploys only `index.html`, `favicon.svg`, `.nojekyll` and `assets/` from `main`.
