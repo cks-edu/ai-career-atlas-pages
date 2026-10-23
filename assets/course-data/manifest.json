@@ -40,14 +40,14 @@
     "sha256": "6cf6265958119c48979dc4834631c190f07de095a1c4fa5ff254c157fae6b7cc"
   },
   {
-    "src": "assets/course-data/academy-base-bfa6f5d431b19159.js",
-    "bytes": 33697,
-    "sha256": "bfa6f5d431b191590e35aa9649374f8e15b206c1151a375580937bfd1e9d6535"
+    "src": "assets/course-data/academy-base-444dde30e6dc028b.js",
+    "bytes": 33991,
+    "sha256": "444dde30e6dc028b8ab1814e76eb1b6c2e7c0c3f69d2b73990246842620b7ee1"
   },
   {
-    "src": "assets/course-data/academy-courses-1-226e8b0e4ebcb0ce.js",
-    "bytes": 1933852,
-    "sha256": "226e8b0e4ebcb0ce06eae4470796b94ae137907ef9ecbbeab2ff0422f58c2dc4"
+    "src": "assets/course-data/academy-courses-1-325ae47c4328128f.js",
+    "bytes": 1940930,
+    "sha256": "325ae47c4328128fdb12b7d38fa95d29d01209ca5d1b997d5d35d4e9fca5e097"
   },
   {
     "src": "assets/course-data/academy-courses-2-9039c2844759f399.js",
