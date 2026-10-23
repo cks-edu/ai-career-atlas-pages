@@ -1,0 +1,87 @@
+[
+  {
+    "src": "assets/course-data/handbook-0530047724bbe86f.js",
+    "bytes": 122165,
+    "sha256": "0530047724bbe86f8f6bb48325f16695855cce43ceab7051a54f75dc86bd35ff"
+  },
+  {
+    "src": "assets/course-data/lab-71d7de43e613f08b.js",
+    "bytes": 258494,
+    "sha256": "71d7de43e613f08b0012ea5b9589dc08804074f35f2a2b614879472d1dab5139"
+  },
+  {
+    "src": "assets/course-data/advanced-1371c0b7b4e7c4cd.js",
+    "bytes": 391600,
+    "sha256": "1371c0b7b4e7c4cdefe9c0ceb6bbff4a75f9c5f17b4cd67cb29bd5c309f0bd73"
+  },
+  {
+    "src": "assets/course-data/capstone-aa58df4ce0a7698b.js",
+    "bytes": 2569217,
+    "sha256": "aa58df4ce0a7698bd1dcfd0396f3974223559d792460e7f3642f219d56869b6c"
+  },
+  {
+    "src": "assets/course-data/interview-98994e3457d8d365.js",
+    "bytes": 105565,
+    "sha256": "98994e3457d8d365fad4423e92faa790b74c940598e62edcf25ec5d8e6d735c1"
+  },
+  {
+    "src": "assets/course-data/portfolio-fea03256361f219b.js",
+    "bytes": 2100950,
+    "sha256": "fea03256361f219bc4366d7a47cc7e00d9b75446dd29871b1b6dfbecfdd347a9"
+  },
+  {
+    "src": "assets/course-data/practice-c229a7904659eec5.js",
+    "bytes": 2330566,
+    "sha256": "c229a7904659eec561a51cf73ead64c83c7e6eb8303c92413e920957c14168a1"
+  },
+  {
+    "src": "assets/course-data/directory-6cf6265958119c48.js",
+    "bytes": 209067,
+    "sha256": "6cf6265958119c48979dc4834631c190f07de095a1c4fa5ff254c157fae6b7cc"
+  },
+  {
+    "src": "assets/course-data/academy-base-bfa6f5d431b19159.js",
+    "bytes": 33697,
+    "sha256": "bfa6f5d431b191590e35aa9649374f8e15b206c1151a375580937bfd1e9d6535"
+  },
+  {
+    "src": "assets/course-data/academy-courses-1-226e8b0e4ebcb0ce.js",
+    "bytes": 1933852,
+    "sha256": "226e8b0e4ebcb0ce06eae4470796b94ae137907ef9ecbbeab2ff0422f58c2dc4"
+  },
+  {
+    "src": "assets/course-data/academy-courses-2-9039c2844759f399.js",
+    "bytes": 1931364,
+    "sha256": "9039c2844759f399b88e9e6a4d5749dd2fbd1df647c529af008faee9584fcb76"
+  },
+  {
+    "src": "assets/course-data/academy-courses-3-70f04e5f56a6f822.js",
+    "bytes": 1930246,
+    "sha256": "70f04e5f56a6f822f12c21eb8957f9497f7abb321d5ca4fe677461db796e0ec3"
+  },
+  {
+    "src": "assets/course-data/academy-courses-4-726e88ddf2d86e76.js",
+    "bytes": 1973977,
+    "sha256": "726e88ddf2d86e76a7eefe2cb0d5581ce73ccc9098d54cd55fee1efa2de0cd54"
+  },
+  {
+    "src": "assets/course-data/academy-courses-5-1d3c01e4ec535578.js",
+    "bytes": 1974240,
+    "sha256": "1d3c01e4ec535578aabb805c51f91cc50c929e50d59f75a6204e9ec9969fff70"
+  },
+  {
+    "src": "assets/course-data/academy-courses-6-1a2dac0815cabc32.js",
+    "bytes": 1727633,
+    "sha256": "1a2dac0815cabc3266463bde8fd21a7d5c5dcae1aea6ae0b6abca4df8e86aaf5"
+  },
+  {
+    "src": "assets/course-data/tutor-runtime-8acf50a4ab5b3a25.js",
+    "bytes": 152,
+    "sha256": "8acf50a4ab5b3a2579deeffa3cdc5df697514deb03d58824d294d07d2a4927ba"
+  },
+  {
+    "src": "assets/course-data/tutor-lessons-9dbcf13c8ac69527.js",
+    "bytes": 13174,
+    "sha256": "9dbcf13c8ac69527618665dd2c918d124bcbc666b5ad7045a8d4c2a1135f6920"
+  }
+]
