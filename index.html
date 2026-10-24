@@ -434,8 +434,8 @@ body.workspace-mode #learn,body.workspace-mode #academyRoot{height:100%;margin:0
 /* END WORKSPACE CSS */
 /* BEGIN WORKSPACE POLISH CSS */
 /* Workspace-only semantic accents. Original site palette and bundled fonts stay intact. */
-.workspace-shell{--bg-canvas:#F8FAFC;--bg-surface:#FFFFFF;--bg-card:#F1F5F9;--accent-learn:#0284C7;--accent-map:#4F46E5;--accent-ticket:#D97706;--accent-verified:#059669;--accent-danger:#E11D48;--learn-ink:#0369A1;--map-ink:#4F46E5;--ticket-ink:#92400E;--verified-ink:#047857;--danger-ink:#BE123C;--learn-tint:#E0F2FE;--map-tint:#EEF2FF;--ticket-tint:#FFF7ED;--verified-tint:#ECFDF5;--danger-tint:#FFF1F2;--stage-ink:var(--learn-ink);--stage-tint:var(--learn-tint);background:var(--bg-canvas)}
-.workspace-shell[data-workspace-theme=dark]{color-scheme:dark;--bg-canvas:#090D16;--bg-surface:#0F172A;--bg-card:#162033;--panel:#0F172A;--panel2:#162033;--ink:#F8FAFC;--muted:#B0BED0;--line:#334155;--brand:#7DD3FC;--brand-soft:#12314B;--accent-learn:#38BDF8;--accent-map:#818CF8;--accent-ticket:#F59E0B;--accent-verified:#10B981;--accent-danger:#F43F5E;--learn-ink:#7DD3FC;--map-ink:#A5B4FC;--ticket-ink:#FCD34D;--verified-ink:#6EE7B7;--danger-ink:#FDA4AF;--learn-tint:#12314B;--map-tint:#24234A;--ticket-tint:#362710;--verified-tint:#10342E;--danger-tint:#3D1A2B;--good:var(--accent-verified);--amber:var(--accent-ticket)}
+.workspace-shell{--bg-canvas:#F8FAFC;--bg-surface:#FFFFFF;--bg-card:#F1F5F9;--accent-learn:#2F6A57;--accent-map:#46553D;--accent-ticket:#D97706;--accent-verified:#059669;--accent-danger:#E11D48;--learn-ink:#285447;--map-ink:#46553D;--ticket-ink:#92400E;--verified-ink:#047857;--danger-ink:#BE123C;--learn-tint:#EAF2ED;--map-tint:#F1F3EA;--ticket-tint:#FFF7ED;--verified-tint:#ECFDF5;--danger-tint:#FFF1F2;--stage-ink:var(--learn-ink);--stage-tint:var(--learn-tint);background:var(--bg-canvas)}
+.workspace-shell[data-workspace-theme=dark]{color-scheme:dark;--bg-canvas:#090D16;--bg-surface:#0F172A;--bg-card:#162033;--panel:#0F172A;--panel2:#162033;--ink:#F8FAFC;--muted:#B0BED0;--line:#334155;--brand:#B8DCC6;--brand-soft:#193A2C;--accent-learn:#A6D3BC;--accent-map:#CED8A9;--accent-ticket:#F59E0B;--accent-verified:#10B981;--accent-danger:#F43F5E;--learn-ink:#B8DCC6;--map-ink:#CED8A9;--ticket-ink:#FCD34D;--verified-ink:#6EE7B7;--danger-ink:#FDA4AF;--learn-tint:#193A2C;--map-tint:#303724;--ticket-tint:#362710;--verified-tint:#10342E;--danger-tint:#3D1A2B;--good:var(--accent-verified);--amber:var(--accent-ticket)}
 .workspace-shell[data-stage=practice]{--stage-ink:var(--ticket-ink);--stage-tint:var(--ticket-tint)}
 .workspace-shell[data-stage=quiz]{--stage-ink:var(--map-ink);--stage-tint:var(--map-tint)}
 .workspace-shell[data-stage=career]{--stage-ink:var(--verified-ink);--stage-tint:var(--verified-tint)}
@@ -500,8 +500,8 @@ body.workspace-mode #learn,body.workspace-mode #academyRoot{height:100%;margin:0
 .workspace-shell.motion-reduced{transition:none!important}
 .workspace-shell .ws-status-pill{font-family:'Manrope',sans-serif;font-weight:600}
 /* Coordinated filled controls: strong actions, quiet navigation, semantic task states. */
-.workspace-shell{--control-fill:#254A80;--control-hover:#1B3B68;--control-on:#FFFFFF;--control-soft:#EAF0F8;--control-soft-hover:#DAE6F5;--control-ink:#254A80;--control-edge:#CCD9EB;--map-fill:#4338CA;--practice-fill:#92400E;--verified-fill:#047857;--danger-fill:#BE123C}
-.workspace-shell[data-workspace-theme=dark]{--control-fill:#A9CCFF;--control-hover:#C6DDFF;--control-on:#10233F;--control-soft:#1B304E;--control-soft-hover:#274363;--control-ink:#C6DDFF;--control-edge:#3A577C;--map-fill:#C7D2FE;--practice-fill:#FCD34D;--verified-fill:#6EE7B7;--danger-fill:#FDA4AF}
+.workspace-shell{--control-fill:#285447;--control-hover:#1E4338;--control-on:#FFFFFF;--control-soft:#EEF4EF;--control-soft-hover:#DCEADD;--control-ink:#285447;--control-edge:#D3E0D7;--map-fill:#46553D;--practice-fill:#92400E;--verified-fill:#047857;--danger-fill:#BE123C}
+.workspace-shell[data-workspace-theme=dark]{--control-fill:#B8DCC6;--control-hover:#D4EBDD;--control-on:#102A1F;--control-soft:#193A2C;--control-soft-hover:#284C3A;--control-ink:#D4EBDD;--control-edge:#4C6A58;--map-fill:#CED8A9;--practice-fill:#FCD34D;--verified-fill:#6EE7B7;--danger-fill:#FDA4AF}
 .workspace-shell button{background:var(--control-soft);color:var(--control-ink);border-color:var(--control-edge)}
 .workspace-shell button:disabled{background:var(--bg-card);color:var(--muted);border-color:var(--line);opacity:.65;cursor:not-allowed}
 .workspace-shell .ws-topbar{background:var(--control-soft);border-bottom-color:var(--control-edge)}
@@ -554,10 +554,18 @@ body.workspace-mode #learn,body.workspace-mode #academyRoot{height:100%;margin:0
  .workspace-shell .ws-topbar select:hover{background-color:var(--control-soft);border-color:var(--control-fill)}
  .workspace-shell[data-workspace-theme=dark] button:not(:disabled):hover{filter:brightness(1.12)}
 }
-/* Shared catalog navigation and filters use the same established blue family. */
-body:not(.workspace-mode) :is(.catalog-filters select,.directory-filters select,.weekly-filters select,.study-settings select,.tutor-settings select,.profile-form select){background-color:#EAF0F8;color:#254A80;border-color:#CCD9EB}
-body:not(.workspace-mode) :is(.catalog-tracks button,.directory-tabs .btn,.catalog-pagination button){background:#EAF0F8;color:#254A80;border-color:transparent;border-radius:6px;padding-inline:12px}
-body:not(.workspace-mode) :is(.catalog-tracks button.active,.directory-tabs .btn[aria-current=page],.directory-tabs .btn.active){background:#254A80;color:#FFFFFF}
+/* Shared catalog navigation and filters use the same forest and sage family. */
+body:not(.workspace-mode) :is(.catalog-filters select,.directory-filters select,.weekly-filters select,.study-settings select,.tutor-settings select,.profile-form select){background-color:#EEF4EF;color:#285447;border-color:#D3E0D7}
+body:not(.workspace-mode) :is(.catalog-tracks button,.directory-tabs .btn,.catalog-pagination button){background:#EEF4EF;color:#285447;border-color:transparent;border-radius:6px;padding-inline:12px}
+body:not(.workspace-mode) :is(.catalog-tracks button.active,.directory-tabs .btn[aria-current=page],.directory-tabs .btn.active){background:#285447;color:#FFFFFF}
+
+/* The shared ribbon and global actions match the forest workspace. */
+body:not(.workspace-mode){--brand:#285447;--brand2:#285447;--brand-soft:#EEF4EF;--accent:#285447}
+.site-ribbon{background:#285447;border-bottom-color:#285447;box-shadow:0 4px 18px #24433814}
+.ribbon-dropdown button,.ribbon-dropdown [aria-current=page]{color:#285447}
+.ribbon-dropdown button:hover,.ribbon-dropdown button.active{background:#EEF4EF;color:#285447}
+body:not(.workspace-mode) .btn.primary:hover{background:#1E4338}
+body:not(.workspace-mode) :is(.ac-course-head h1,.catalog-heading h1,.ac-intro h1,.settings-heading h1){color:#285447}
 
 /* END WORKSPACE POLISH CSS */
 </style>
