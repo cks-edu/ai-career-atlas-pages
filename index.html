@@ -231,6 +231,127 @@ body:has(#learn.active .course-lesson) .main{max-width:none;padding:20px 28px 32
 @media(max-width:650px){.lesson-layout>.lesson-sheet,.lesson-layout>.lesson-outline{grid-column:1}.lesson-subtopics button{min-height:44px}.lesson-subtopics .subtopic-number{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.lesson-layout,.syllabus-module>summary:before,.syllabus-module::details-content{transition:none!important;scroll-behavior:auto!important}}
 
+/* Lesson reader: quiet navigation, a readable page, and examples close to the idea. */
+body:has(#learn.active .course-lesson) .main{padding:18px 28px 40px;background:#fff}
+.course-study-head{padding-bottom:16px;border-color:#edf0f4}
+.course-study-head h1{font-size:19px;letter-spacing:-.035em;color:#263d56}
+.course-study-head .eyebrow{font-size:9px;letter-spacing:.1em;color:#66768a}
+.lesson-workspace-bar{padding:14px 0 18px;gap:12px}
+.lesson-workspace-bar>[data-ac-outline]{background:#f0f4f8;color:#3b5470;min-height:36px;padding-inline:12px}
+.lesson-progress-inline{font-size:11px;color:#617287;gap:10px}
+.lesson-progress-inline progress{width:100px;height:4px}
+.lesson-evidence summary{font-size:11px;color:#617287}
+.lesson-layout{--outline-width:244px;--outline-gap:36px}
+.lesson-outline{padding:18px 12px 18px;background:#f7f9fc;border:0;border-radius:10px;top:92px;max-height:calc(100dvh - 110px);scrollbar-width:thin;scrollbar-color:#cbd6e2 transparent}
+.lesson-outline .syllabus-heading{padding:0 8px;margin-bottom:6px}
+.lesson-outline .syllabus-heading h2{font-size:13px;color:#2c4057;letter-spacing:-.02em}
+.lesson-outline .syllabus-heading>span{font-size:10px;color:#69798d}
+.lesson-outline .outline-guide{padding:0 8px;margin-bottom:10px;font-size:11px!important;color:#617287}
+.syllabus-module{border:0;padding:6px 0}
+.syllabus-module>summary{padding:5px 7px;color:#52667e;font-size:11px;line-height:1.6;gap:8px;font-weight:600}
+.syllabus-module>summary>small{display:none}
+.syllabus-module>summary:before{font-size:16px;color:#6c7e94}
+.syllabus-module ol{margin:2px 0 8px}
+.lesson-outline .syllabus-lesson>.btn{font-size:12px;padding:10px 11px;line-height:1.6;color:#50637a;border-radius:6px;background:transparent;font-weight:400}
+.lesson-outline .syllabus-lesson>.btn:hover{background:#edf2f8;color:#244f83}
+.lesson-outline .syllabus-lesson>.btn[aria-current=step]{background:#e7eef8;color:#224e83;font-weight:600}
+.lesson-outline .lesson-subtopics{margin:5px 0 9px 13px;padding-left:7px;border-left:1px solid #d4dfed}
+.lesson-outline .lesson-subtopics button{padding:7px 5px;min-height:34px;font-size:11px;line-height:1.5;color:#62748b}
+.lesson-outline .lesson-subtopics .subtopic-number{font-size:10px;color:#657b94}
+.lesson-outline .lesson-subtopics button[aria-current=location]{color:#214f86}
+.lesson-sheet{padding:5px 0 32px}
+.lesson-current{padding:0 0 22px}
+.lesson-meta{display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:10px;letter-spacing:.035em;color:#667990;margin-bottom:12px;line-height:1.6}
+.lesson-meta>span:first-child:not(:last-child){color:#355b87;font-weight:600}
+.lesson-meta>span+span{position:relative}
+.lesson-meta>span+span:before{content:'·';position:absolute;left:-9px;color:#8e9eaf}
+.lesson-current h2{font-size:clamp(26px,2.35vw,34px);line-height:1.25;letter-spacing:-.045em;max-width:34ch;margin:0 0 15px;color:#203249;text-wrap:balance}
+.lesson-sheet .lesson-lead{font-size:16px;line-height:1.75;color:#526479;max-width:76ch;margin:0}
+.lesson-stages{gap:25px;margin:0 0 28px;border-bottom:1px solid #e5ebf2;padding-top:0}
+.lesson-stages button{font-size:12px;color:#66788e;padding:12px 0;min-height:44px;border-bottom-width:2px}
+.lesson-stages button[aria-current=step]{color:#244f83}
+#learn .lesson-stages{position:sticky;top:76px;background:#fff;z-index:5}
+.teaching-grid{gap:28px}
+.teaching-text{max-width:76ch}
+.teaching-chapter{padding:0 0 25px;margin:0 0 25px;border-bottom:1px solid #edf1f5;scroll-margin-top:150px}
+.teaching-chapter:last-of-type{margin-bottom:0;border-bottom:0;padding-bottom:6px}
+.teaching-chapter h3,.teaching-chapter:first-child h3{font-size:20px;line-height:1.4;margin:0 0 12px;letter-spacing:-.025em;color:#293f56}
+.teaching-chapter h3 .subtopic-number{font-size:11px;font-weight:500;margin-right:9px;color:#7187a1;vertical-align:middle;letter-spacing:0}
+.lesson-sheet .teaching-chapter p{font-size:16px;line-height:1.8;color:#46596e;max-width:68ch}
+.lesson-sheet .teaching-chapter .teaching-opening{margin-bottom:10px;color:#293f56;line-height:1.65}
+.teaching-opening strong{font-weight:600}
+.lesson-sheet .ac-model{border:0;background:#f4f7fa;padding:18px 20px;border-radius:8px;margin-top:26px}
+.lesson-sheet .ac-model>strong{color:#35567b;font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+.lesson-sheet .ac-model p{font-size:15px;line-height:1.75;color:#40576e}
+.lesson-sheet .ac-model .help{font-size:12px;color:#64768b}
+.lesson-sheet .teaching-example{padding:0;border:0;background:transparent;border-radius:0}
+.example-heading{padding-bottom:4px}
+.teaching-example .example-heading h3{font-size:13px;color:#506680;font-weight:600}
+.lesson-sheet .teaching-example .ac-code{border-radius:8px;background:#f4f7fb;padding:20px;line-height:1.8;font-size:13px}
+.lesson-sheet .teaching-example .example-notes li{font-size:13px;color:#586c82;line-height:1.7}
+.lesson-help-link{font-size:12px;color:#345f93;line-height:1.6;margin-top:16px;text-underline-offset:4px}
+.lesson-sheet>.lesson-small-task,.lesson-sheet [data-lesson-panel=learn]>.lesson-small-task{display:flex;align-items:center;gap:28px;background:#f5f8fc;border:0;border-radius:10px;padding:22px 24px;margin:30px 0 24px}
+.reader-kicker{font-size:9px;letter-spacing:.12em;font-weight:700;line-height:1.6;color:#5b7391;display:block}
+.lesson-small-task h3{font-size:18px;margin:6px 0 10px;color:#2c425b}
+.lesson-sheet .lesson-small-task p{font-size:14px;line-height:1.75;max-width:67ch;color:#4b627b}
+.lesson-sheet .lesson-small-task .task-expected{font-size:13px;color:#526b80;margin-bottom:0}
+.lesson-task-action{flex:0 0 175px;margin-left:auto}
+.lesson-task-action .help{font-size:11px!important;line-height:1.7!important;margin-bottom:0}
+.lesson-goal{margin:22px 0}
+.lesson-sheet .lesson-next{padding-top:22px;margin-top:30px;border-top:1px solid #edf1f5;gap:24px;justify-content:space-between}
+.lesson-next .btn{font-size:12px!important;line-height:1.65;max-width:60%;text-align:left}
+.lesson-sheet .lesson-practice-steps h4{font-size:17px;color:#2c425b}
+/* The small CSS experiment is scoped; it never styles the page around it. */
+.css-experiment{padding:20px;background:#f6f8fc;border-radius:10px;min-width:0}
+.experiment-heading{display:flex;align-items:center;gap:12px;justify-content:space-between}
+.lesson-sheet .experiment-heading h3{font-size:17px;line-height:1.35;letter-spacing:-.025em;margin:5px 0 0;padding:0;border:0;color:#2b425d}
+.experiment-heading>.btn{font-size:11px!important;min-height:32px!important;padding:6px 8px!important;background:transparent;border:0;color:#5b7089}
+.lesson-sheet .experiment-intro{font-size:12px;color:#62758e;margin:10px 0 18px;line-height:1.6}
+.experiment-file{display:flex;align-items:center;justify-content:space-between;font-size:10px;letter-spacing:.03em;color:#60748e;background:#edf2f8;border-radius:7px 7px 0 0;padding:6px 12px}
+.experiment-file>.btn{padding:5px!important;min-height:28px!important;font-size:10px!important;background:transparent;border:0;color:#4e6889}
+.lesson-sheet .teaching-example .css-rule{margin:0;padding:15px 16px;background:white;border-radius:0 0 7px 7px;font-size:12px;line-height:1.9;color:#496078;white-space:pre-wrap;overflow-wrap:anywhere}
+.css-rule button{font:inherit;background:transparent;border:0;padding:0;color:#275a83;text-align:left;cursor:pointer;min-height:0;line-height:inherit;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:4px;border-radius:2px}
+.css-rule button[aria-pressed=true]{background:#e8f0fa;color:#1f5088;text-decoration:none;box-shadow:0 0 0 3px #e8f0fa}
+.lesson-sheet .css-definition{min-height:48px;font-size:11px;line-height:1.65;margin:11px 0 16px;color:#4e6682}
+.experiment-controls{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:12px 14px}
+.experiment-controls label{display:grid;gap:6px;font-size:10px;font-weight:600;color:#5a6f89;min-width:0}
+.experiment-controls select{width:100%;max-width:100%;min-width:0;font:inherit;font-size:11px;font-weight:400;min-height:36px;padding:7px 5px;color:#324f70;background:#fff;border:1px solid #dde5ee;border-radius:5px}
+.experiment-controls .css-space{grid-column:1/-1;display:grid;grid-template-columns:1fr auto;align-items:center;row-gap:2px}
+.css-space output{font-weight:400;color:#476988;font-size:11px}
+.css-space input{grid-column:1/-1;width:100%;min-width:0;min-height:30px;accent-color:#406b9f;cursor:pointer;margin:0}
+.css-preview{background:white;padding:15px 12px 12px;border-radius:7px;margin-top:12px;min-width:0}
+.css-preview>.reader-kicker{font-size:8px;margin:0 0 12px;color:#72839a}
+.lesson-sheet .css-preview>p{font-size:13px;line-height:1.65;margin:0;color:#243649;overflow-wrap:anywhere}
+.lesson-sheet .css-preview>p+p{margin-top:10px}
+.lesson-sheet .experiment-result{font-size:11px;line-height:1.6;color:#4d6783;margin:12px 0 8px}
+.lesson-sheet .experiment-limit{font-size:10px;line-height:1.6;color:#64768b;margin:0 0 8px}
+.experiment-source{font-size:10px;color:#45668c}
+.original-example{margin:18px 0 0!important}
+.original-example>summary{font-size:12px!important;color:#526c8c;min-height:36px;cursor:pointer}
+.original-example[open]>.example-heading{margin-top:12px}
+#academyRoot .css-rule button:focus-visible{outline:2px solid #315d9e;outline-offset:4px}
+@media(min-width:1100px){.teaching-grid,.outline-collapsed .teaching-grid{grid-template-columns:minmax(0,1fr) minmax(280px,340px);gap:32px}}
+@media(min-width:1600px){.lesson-layout{--outline-width:260px;--outline-gap:48px}.teaching-grid,.outline-collapsed .teaching-grid{grid-template-columns:minmax(0,1fr) minmax(320px,380px);gap:48px}.lesson-sheet{padding-right:20px}}
+@media(max-width:1099px){.teaching-grid,.outline-collapsed .teaching-grid{grid-template-columns:minmax(0,1fr)}.has-css-studio .teaching-text{display:contents}.has-css-studio .teaching-chapter{order:2}.has-css-studio #lesson-chapter-0{order:0}.has-css-studio .lesson-css-studio{order:1;max-width:580px;width:100%}.has-css-studio .ac-model{order:3;margin-top:0}.css-experiment{max-width:580px}}
+@media(max-width:650px){body:has(#learn.active .course-lesson) .main{padding:14px 16px 28px}.course-study-head h1{font-size:18px}.lesson-workspace-bar{padding:12px 0 16px;gap:6px}.lesson-workspace-bar>[data-ac-outline]{min-height:44px;padding:6px 10px}.lesson-progress-inline{gap:6px;font-size:9px}.lesson-progress-inline progress{width:36px}.lesson-evidence summary{font-size:10px}.lesson-current{padding-bottom:17px}.lesson-meta{font-size:9px;gap:12px;row-gap:5px;margin-bottom:10px}.lesson-meta>span:first-child{flex-basis:100%}.lesson-meta>span:nth-child(2):before{display:none}.lesson-meta>span+span:before{left:-8px}.lesson-current h2{font-size:27px;line-height:1.27;margin-bottom:12px;max-width:100%;text-wrap:initial}.lesson-sheet .lesson-lead{font-size:15px;line-height:1.75}.lesson-stages{gap:0;justify-content:space-between;margin-bottom:24px}.lesson-stages button{font-size:11px;min-height:44px}.lesson-sheet .teaching-chapter h3{font-size:19px}.teaching-chapter{padding-bottom:22px;margin-bottom:0}.teaching-grid{gap:20px}.lesson-outline{max-height:55dvh;padding:16px 12px;border-radius:8px;position:static}.syllabus-module>summary,.lesson-outline .syllabus-lesson>.btn,.lesson-outline .lesson-subtopics button{min-height:44px}.lesson-outline .syllabus-lesson>.btn{font-size:13px}.lesson-outline .lesson-subtopics button{font-size:12px}.lesson-sheet [data-lesson-panel=learn]>.lesson-small-task{display:block;padding:20px;margin:24px 0}.lesson-task-action{margin:18px 0 0}.lesson-task-action .help{margin-top:7px}.lesson-sheet .lesson-next{gap:12px}.lesson-next .btn{max-width:100%}.css-experiment{padding:18px 16px}.experiment-controls select{font-size:16px;min-height:44px}.experiment-controls{grid-template-columns:minmax(0,1fr);gap:12px}.experiment-controls .css-space{grid-column:1}.css-space input{min-height:44px}.experiment-heading>.btn,.experiment-file>.btn{min-height:44px!important;padding:7px 9px!important}.lesson-sheet .teaching-example .css-rule{font-size:13px}.css-rule button{min-height:32px}.lesson-sheet .css-definition{font-size:12px;min-height:0}.lesson-sheet .experiment-result{font-size:12px}.lesson-sheet .experiment-limit,.experiment-source{font-size:11px}#learn .lesson-stages{top:69px}}
+@media(prefers-reduced-motion:no-preference){.lesson-stages button{transition:color .15s ease,border-color .15s ease}.css-rule button{transition:background-color .15s ease}.css-preview p{transition:color .15s ease,background-color .15s ease}}
+
+@media(min-width:651px){#learn [id^=ac-lesson-]{scroll-margin-top:200px}}
+#learn .teaching-chapter{scroll-margin-top:24px}
+.css-experiment .css-preview{margin:0 0 16px}
+.experiment-file>[data-ac-copy-example]{min-width:64px}
+.experiment-controls select{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='m3 4.5 3 3 3-3' fill='none' stroke='%23556b83' stroke-width='1.3' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center;padding-right:25px;border-color:#e0e7ef}
+#learn [data-lesson-panel]{scroll-margin-top:24px}
+.teaching-chapter p>code,.teaching-opening strong>code{font-size:.85em;padding:2px 5px;background:#f0f4f8;border-radius:3px;color:#315678;white-space:normal}
+#courseFocus #academyRoot .lesson-outline .syllabus-lesson>.btn{border:0;background:transparent;color:#50637a;padding:10px 11px;border-radius:6px;line-height:1.6;font-weight:400}
+#courseFocus #academyRoot .lesson-outline .syllabus-lesson>.btn[aria-current=step]{background:#e7eef8;color:#224e83;font-weight:600}
+#courseFocus #academyRoot .lesson-workspace-bar>[data-ac-outline]{border:0;background:#f0f4f8;color:#3b5470}
+#courseFocus #academyRoot .experiment-heading>.btn,#courseFocus #academyRoot .experiment-file>.btn{border:0;background:transparent;color:#4e6889}
+@media(max-width:650px){#learn [id^=ac-lesson-]{scroll-margin-top:400px}}
+.lesson-evidence summary:after{content:none}
+.progress-detail-short{display:none}
+@media(max-width:650px){.lesson-evidence summary{font-size:11px}.progress-detail-full{display:none}.progress-detail-short{display:inline}}
+
 /* END LIBRARY CSS */
 </style>
 </head>
@@ -2282,7 +2403,7 @@ const AcademyEngine=(()=>{
 /* Stable lesson indexes keep existing practice, quiz and tutor records intact. */
 const LessonWorkspace=(()=>{
  const E=x=>escapeHTML(String(x??''));
- const panes=[['learn','Learn'],['practice','Practise'],['quiz','Check'],['help','Resources']];
+ const panes=[['learn','Learn'],['practice','Practise'],['quiz','Quiz'],['help','Resources']];
  const href=(c,l,i,mode='explain',quiz=false)=>'?'+new URLSearchParams({track:c.track,course:c.id,level:l.id,mode,note:`course-${c.id}-${l.id[0]}-${quiz?'lessonquiz':'lesson'}-${i}`})+'#tutor';
  function steps(s){const items=s.curriculum?s.steps?.slice(1):s.steps;return items?.length?`<ol class="lesson-practice-steps">${items.map(t=>`<li><h4>${E(t.title)}</h4><p>${E(t.action)}</p>${t.command?`<pre class="ac-code" data-language-fixed><code>${E(t.command)}</code></pre><p>${E(t.why||'')}</p>`:''}<p class="help" data-language-fixed><b>Expected:</b> ${E(t.expected)}</p></li>`).join('')}</ol>`:''}
  function glossary(l){return `<details class="lesson-glossary"><summary>Glossary · ${l.terms.length} terms</summary><dl>${l.terms.map(([word,meaning])=>`<dt><strong>${E(word)}</strong></dt><dd>${E(meaning)}</dd>`).join('')}</dl></details>`}
@@ -2294,17 +2415,56 @@ const LessonWorkspace=(()=>{
   if(!l.modules)return heading+`<ol class="syllabus-flat">${order.map((n,j)=>item(n,j)).join('')}</ol>`;
   return heading+l.modules.map(m=>`<details class="syllabus-module" ${m.lessons.includes(i)||ui.openModules?.includes(m.id)?'open':''} data-module-id="${E(m.id)}"><summary><span>${E(m.title)}</span><small>${m.lessons.length} lessons</small></summary><ol>${m.lessons.map(n=>item(n,order.indexOf(n))).join('')}</ol></details>`).join('');
  }
- function teachingDetails(t){return `${t.takeaway?`<p class="teaching-takeaway"><strong>${E(t.takeaway)}</strong></p>`:''}<p>${E(t.body)}</p>${t.points?.length?`<${t.ordered?'ol':'ul'} class="teaching-points ${t.ordered?'teaching-checklist':''}">${t.points.map(p=>`<li><strong>${E(p.label)}</strong><p>${E(p.text)}</p></li>`).join('')}</${t.ordered?'ol':'ul'}>`:''}${t.code?`<pre class="ac-code" data-language-fixed><code>${E(t.code)}</code></pre>`:''}${t.question?`<details class="teaching-prediction"><summary><span class="teaching-predict-label">Pause & predict</span><span>${E(t.question)}</span><span class="teaching-reveal">Reveal the reasoning</span></summary><p>${E(t.answer)}</p><p class="help">Self-check · not graded. Use Check for the saved lesson quiz.</p></details>`:''}`}
- function teaching(c,l,i,x,s){return `${s.exampleDemo?`<p class="teaching-demo-intro"><a href="${E(s.exampleDemo)}" target="_blank" rel="noopener noreferrer">See it happen: try the colour experiment ↗</a><span>Change one rule. Predict the result. Check what the browser does.</span></p>`:''}<div class="teaching-grid"><div class="teaching-text">${s.teaching.map((t,k)=>`<section class="teaching-chapter ${t.takeaway?'teaching-guided':''}" id="lesson-chapter-${k}">${t.takeaway?`<span class="teaching-step">${String(k+1).padStart(2,'0')} / UNDERSTAND</span>`:''}<h3 tabindex="-1"><span class="subtopic-number">${(l.lessonOrder||l.lessons.map((_,n)=>n)).indexOf(i)+1}.${k+1}</span> ${E(t.title)}</h3>${teachingDetails(t)}</section>`).join('')}<div class="ac-model"><strong>Mental model</strong><p>${E(x.model)}</p><p class="help"><b>Where it stops:</b> ${E(x.limit)}</p></div></div><aside class="teaching-example" aria-label="Worked example"><div class="example-heading"><h3>Worked example</h3><button class="btn small" data-ac-copy-example>Copy code</button></div>${s.exampleMarkup?`<p class="example-file-label">HTML · inside body</p><pre class="ac-code" data-language-fixed><code>${E(s.exampleMarkup)}</code></pre><p class="example-file-label">CSS · in styles.css</p>`:''}<pre class="ac-code" data-language-fixed><code id="lessonExampleCode">${E(s.exampleCode)}</code></pre><ol class="example-notes">${s.annotations.map(n=>`<li>${E(n)}</li>`).join('')}</ol>${s.exampleDemo?`<a class="btn small lesson-demo-link" href="${E(s.exampleDemo)}" target="_blank" rel="noopener noreferrer">Try the colour experiment ↗</a><p class="help">Change the rules and see the real browser result. No account needed.</p>`:''}<div class="lesson-small-task"><h3>Your first result</h3><p>${E(s.quickTask)}</p><p><b>Look for:</b> ${E(s.quickExpected)}</p><a class="btn small" href="${E(c.pack)}" download>Download practice files</a><p class="help">Folder: course-labs/${E(s.fixture)} · setup is in Practise.</p></div><a class="lesson-help-link" href="${E(href(c,l,i))}">Help with this lesson →</a><p id="lessonCopyStatus" role="status" class="help"></p></aside></div>`}
+ function cssInline(text){return E(text).replace(/link rel=&quot;stylesheet&quot;|\bh1\b|\.notice\b|\bhead\b/g,word=>'<code>'+word+'</code>')}
+ function teachingDetails(t,scannable=false){const match=scannable&&t.body.match(/^(.+?[.!?])\s+([\s\S]+)$/);const body=match?`<p class="teaching-opening"><strong>${cssInline(match[1])}</strong></p><p>${cssInline(match[2])}</p>`:`<p>${E(t.body)}</p>`;return `${t.takeaway?`<p class="teaching-takeaway"><strong>${E(t.takeaway)}</strong></p>`:''}${body}${t.points?.length?`<${t.ordered?'ol':'ul'} class="teaching-points ${t.ordered?'teaching-checklist':''}">${t.points.map(p=>`<li><strong>${E(p.label)}</strong><p>${E(p.text)}</p></li>`).join('')}</${t.ordered?'ol':'ul'}>`:''}${t.code?`<pre class="ac-code" data-language-fixed><code>${E(t.code)}</code></pre>`:''}${t.question?`<details class="teaching-prediction"><summary><span class="teaching-predict-label">Pause & predict</span><span>${E(t.question)}</span><span class="teaching-reveal">Reveal the reasoning</span></summary><p>${E(t.answer)}</p><p class="help">Self-check · not graded. Use Quiz for the saved lesson quiz.</p></details>`:''}`}
+ function cssValues(raw={}){
+  const colors=['#245b52','#2555a4','#9b3e37'],n=Number(raw.space);
+  return {selector:raw.selector==='p'?'p':'.notice',color:colors.includes(raw.color)?raw.color:colors[0],space:Number.isFinite(n)?Math.round(Math.min(32,Math.max(0,n))/4)*4:16};
+ }
+ function cssDefinition(part,v){return part==='selector'?(v.selector==='p'?'Selector: p matches both paragraphs in this preview.': 'Selector: .notice matches only the paragraph with class="notice".') :part==='value'?`Value: ${v.space}px is the amount of padding inside each matched element.`:'Property: padding controls the space inside an element, between its content and its edge.'}
+ function cssCode(v){return `<button type="button" data-css-part="selector" aria-label="Selector: ${E(v.selector)}" aria-pressed="true">${E(v.selector)}</button> {
+  color: <span data-css-color>${E(v.color)}</span>;
+  <button type="button" data-css-part="property" aria-label="Property: padding" aria-pressed="false">padding</button>: <button type="button" data-css-part="value" aria-label="Value: ${v.space} pixels" aria-pressed="false">${v.space}px</button>;
+  background: #eef5f1;
+}`}
+ function cssExperiment(){const v=cssValues({space:16});return `<section class="css-experiment" data-css-experiment data-css-active="selector" aria-labelledby="cssExperimentTitle" data-language-fixed>
+  <div class="experiment-heading"><div><span class="reader-kicker">TRY THE IDEA</span><h3 id="cssExperimentTitle">Try a CSS rule</h3></div><button class="btn small" data-css-reset>Reset</button></div>
+  <p class="experiment-intro">Change one thing and see what responds.</p>
+  <div class="css-preview" data-css-preview><span class="reader-kicker">BROWSER RESULT</span><p class="notice" style="color:#245b52;padding:16px;background:#eef5f1">Learn one thing. Build one thing.</p><p>Keep a small learning journal.</p></div>
+  <div class="experiment-file"><span>styles.css</span><button class="btn small" data-ac-copy-example="cssExperimentCode">Copy code</button></div>
+  <pre class="ac-code css-rule"><code id="cssExperimentCode">${cssCode(v)}</code></pre>
+  <p class="css-definition" data-css-definition role="status">${E(cssDefinition('selector',v))}</p>
+  <div class="experiment-controls"><label>Apply the rule to<select data-css-control="selector" aria-label="CSS selector"><option value=".notice">.notice · one paragraph</option><option value="p">p · both paragraphs</option></select></label><label>Text colour<select data-css-control="color" aria-label="Text colour"><option value="#245b52">Forest</option><option value="#2555a4">Blue</option><option value="#9b3e37">Brick</option></select></label><label class="css-space">Inner space <output data-css-space>16px</output><input type="range" min="0" max="32" step="4" value="16" data-css-control="space" aria-label="Padding in pixels"></label></div>
+
+  <p class="experiment-result" data-css-result role="status">Only the first paragraph matches .notice. Padding: 16px.</p><p class="experiment-limit">These rules are isolated in this preview. On a real page, the cascade can change which declaration wins.</p><a class="experiment-source" href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Getting_started" target="_blank" rel="noopener noreferrer">CSS basics · MDN ↗</a>
+  </section>`}
+ function updateExperiment(target,reset=false){const root=target.closest?.('[data-css-experiment]');if(!root)return false;
+  const controls=Object.fromEntries(['selector','color','space'].map(k=>[k,root.querySelector('[data-css-control="'+k+'"]')]));if(Object.values(controls).some(n=>!n))return false;
+  const v=cssValues(reset?{space:16}:Object.fromEntries(Object.entries(controls).map(([k,n])=>[k,n.value])));
+  for(const [k,n] of Object.entries(controls))n.value=String(v[k]);const copy=root.querySelector('[data-ac-copy-example="cssExperimentCode"]');if(copy&&(reset||!target.dataset.cssPart)){copy.textContent='Copy code';copy.removeAttribute('aria-label');const status=root.closest?.('.teaching-example')?.querySelector('#lessonCopyStatus');if(status)status.textContent=''}
+  const part=reset?'selector':target.dataset.cssPart||root.dataset.cssActive||'selector';root.dataset.cssActive=part;
+  const selectorButton=root.querySelector('[data-css-part=selector]'),valueButton=root.querySelector('[data-css-part=value]');selectorButton.textContent=v.selector;selectorButton.setAttribute('aria-label','Selector: '+v.selector);valueButton.textContent=v.space+'px';valueButton.setAttribute('aria-label','Value: '+v.space+' pixels');root.querySelector('[data-css-color]').textContent=v.color;root.querySelectorAll('[data-css-part]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.cssPart===part)));
+  root.querySelector('[data-css-definition]').textContent=cssDefinition(part,v);root.querySelector('[data-css-space]').textContent=v.space+'px';
+  root.querySelectorAll('[data-css-preview] p').forEach(n=>{const match=n.matches(v.selector);n.style.color=match?v.color:'#243649';n.style.padding=(match?v.space:0)+'px';n.style.backgroundColor=match?'#eef5f1':'transparent'});
+  root.querySelector('[data-css-result]').textContent=(v.selector==='p'?'Both paragraphs match p.':'Only the first paragraph matches .notice.')+' Padding: '+v.space+'px.';
+  return true;
+ }
+ function example(s){return `<div class="example-heading"><h3>Worked example</h3><button class="btn small" data-ac-copy-example>Copy code</button></div>${s.exampleMarkup?`<p class="example-file-label">HTML · inside body</p><pre class="ac-code" data-language-fixed><code>${E(s.exampleMarkup)}</code></pre><p class="example-file-label">CSS · in styles.css</p>`:''}<pre class="ac-code" data-language-fixed><code id="lessonExampleCode">${E(s.exampleCode)}</code></pre><ol class="example-notes">${s.annotations.map(n=>`<li>${E(n)}</li>`).join('')}</ol>${s.exampleDemo?`<a class="btn small lesson-demo-link" href="${E(s.exampleDemo)}" target="_blank" rel="noopener noreferrer">Try the colour experiment ↗</a><p class="help">Change the rules and see the real browser result. No account needed.</p>`:''}`}
+ function teaching(c,l,i,x,s){const number=(l.lessonOrder||l.lessons.map((_,n)=>n)).indexOf(i)+1,studio=s.slug==='css-start';return `${s.exampleDemo?`<p class="teaching-demo-intro"><a href="${E(s.exampleDemo)}" target="_blank" rel="noopener noreferrer">See it happen: try the colour experiment ↗</a><span>Change one rule. Predict the result. Check what the browser does.</span></p>`:''}
+  <div class="teaching-grid ${studio?'has-css-studio':''}"><div class="teaching-text">${s.teaching.map((t,k)=>`<section class="teaching-chapter ${t.takeaway?'teaching-guided':''}" id="lesson-chapter-${k}">${t.takeaway?`<span class="teaching-step">${String(k+1).padStart(2,'0')} / UNDERSTAND</span>`:''}<h3 tabindex="-1"><span class="subtopic-number">${number}.${k+1}</span> ${E(t.title)}</h3>${teachingDetails(t,studio)}</section>`).join('')}
+  <div class="ac-model"><strong>Mental model</strong><p>${E(x.model)}</p><p class="help"><b>Where it stops:</b> ${E(x.limit)}</p></div></div>
+  <aside class="teaching-example ${studio?'lesson-css-studio':''}" aria-label="Worked example">${studio?cssExperiment()+`<details class="original-example"><summary>Original worked example</summary>${example(s)}</details>`:example(s)}<a class="lesson-help-link" href="${E(href(c,l,i,'hint'))}">Need a hint? Get help with this lesson →</a><p id="lessonCopyStatus" role="status" class="help"></p></aside></div>
+  <div class="lesson-small-task"><div><span class="reader-kicker">MAKE IT YOURS</span><h3>Your first result</h3><p>${E(s.quickTask)}</p><p class="task-expected"><b>Look for:</b> ${E(s.quickExpected)}</p></div><div class="lesson-task-action"><a class="btn small" href="${E(c.pack)}" download>Download practice files</a><p class="help">course-labs/${E(s.fixture)}<br>Full setup is in Practise.</p></div></div>`}
+
  function render(c,l,ctx,record,ui={}){
   const order=l.lessonOrder||l.lessons.map((_,i)=>i),i=order.includes(Number(ctx.lesson))&&ctx.lesson!=null?Number(ctx.lesson):order[0],x=l.lessons[i],s=x.study,pos=order.indexOf(i);
   const pane=panes.some(([p])=>p===ui.pane)?ui.pane:'learn';
   const lens=record.lens||((typeof LearnerProfile!=='undefined'&&LearnerProfile.jobSeeking())?'seeker':(typeof LearnerProfile!=='undefined'&&LearnerProfile.role()==='employee')?'switcher':'new');
   const done=order.filter(n=>record.lessons?.[n]).length,ev=typeof TutorLearning!=='undefined'?TutorLearning.snapshot()?.evidence||[]:[];
   const checked=ev.filter(e=>e.card.course===c.id&&e.card.level===l.id&&e.card.kind==='lessonquiz'),correct=checked.filter(e=>e.last.result==='correct').length;
-  return `<div class="lesson-workspace-bar"><button class="btn small" data-ac-outline aria-expanded="${!ui.collapsed}" aria-controls="lessonOutline">${ui.collapsed?'Show topics':'Collapse topics'}</button><div class="lesson-progress-inline"><progress aria-label="Lesson practice progress" max="${order.length}" value="${done}"></progress><span>${done}/${order.length} practices recorded</span></div><details class="lesson-evidence"><summary aria-label="Lesson progress details">Progress details</summary><p id="lessonEvidence">${correct}/${checked.length} attempted lesson quizzes currently correct for the active tutor learner. Unattempted questions are unknown. Practice checks belong to this browser’s journey; quiz records belong to the selected tutor learner.</p></details></div>
+  return `<div class="lesson-workspace-bar"><button class="btn small" data-ac-outline aria-expanded="${!ui.collapsed}" aria-controls="lessonOutline">${ui.collapsed?'Show topics':'Collapse topics'}</button><div class="lesson-progress-inline"><progress aria-label="Lesson practice progress" max="${order.length}" value="${done}"></progress><span>${done}/${order.length} practices recorded</span></div><details class="lesson-evidence"><summary aria-label="Lesson progress details"><span class="progress-detail-full">Progress details</span><span class="progress-detail-short">Details</span></summary><p id="lessonEvidence">${correct}/${checked.length} attempted lesson quizzes currently correct for the active tutor learner. Unattempted questions are unknown. Practice checks belong to this browser’s journey; quiz records belong to the selected tutor learner.</p></details></div>
   <div class="lesson-layout ${ui.collapsed?'outline-collapsed':''}"><nav class="lesson-outline" id="lessonOutline" aria-label="${E(l.id)} lesson sequence" ${ui.collapsed?'hidden':''}>${outline(c,l,i,record,pane,ui)}</nav>
-  <article class="lesson-sheet" id="ac-lesson-${i}" tabindex="-1"><header class="lesson-current"><span class="eyebrow">${s.module?E(s.module)+' · ':''}LESSON ${pos+1} OF ${order.length} · ${E(l.id)} · ~${s.minutes} min</span><h2 tabindex="-1">${E(s.displayTitle||x.title)}</h2>${s.core?.length?'':`<p class="lesson-lead">${E(x.explain)}</p>`}${c.curriculumVersion&&!s.curriculum?`<p class="lesson-review-note">Applied review workshop. New to frontend? <button data-ac-lesson="${l.lessonOrder[0]}">Start the ${E(l.id)} lessons →</button></p>`:''}</header>
+  <article class="lesson-sheet" id="ac-lesson-${i}" tabindex="-1"><header class="lesson-current"><div class="lesson-meta">${s.module?`<span>${E(s.module)}</span>`:''}<span>LESSON ${pos+1} OF ${order.length}</span><span>~${s.minutes} min</span></div><h2 tabindex="-1">${E(s.displayTitle||x.title)}</h2>${s.core?.length?'':`<p class="lesson-lead">${E(x.explain)}</p>`}${c.curriculumVersion&&!s.curriculum?`<p class="lesson-review-note">Applied review workshop. New to frontend? <button data-ac-lesson="${l.lessonOrder[0]}">Start the ${E(l.id)} lessons →</button></p>`:''}</header>
   ${c.id==='fullstack'?`<aside class="course-coverage-note"><strong>Current course coverage</strong><p>This level has ${l.lessons.length} applied lessons, plus its lab and project. It is not yet a complete full-stack curriculum. <a href="?track=software&course=frontend&level=beginner&tab=learn#learn">Open the detailed frontend foundations →</a></p></aside>`:''}
   <nav class="lesson-stages" aria-label="Study steps">${panes.map(([p,title],k)=>`<button id="lesson-stage-${p}" data-ac-pane="${p}" aria-controls="lesson-panel-${p}" ${p===pane?'aria-current="step"':''}>${k+1}. ${title}</button>`).join('')}</nav>
   <section id="lesson-panel-learn" data-lesson-panel="learn" aria-labelledby="lesson-stage-learn" ${pane==='learn'?'':'hidden'}><h3 class="sr-only">Understand the idea</h3>${s.curriculum?teaching(c,l,i,x,s):`${s.core?.length?'':`<p>${E(s.reading)}</p><div class="ac-model"><strong>Mental model</strong><p>${E(x.model)}</p><p class="help"><b>Limit:</b> ${E(x.limit)}</p></div>`}${coreTopics(s,c,pos+1)}${s.core?.length?'':`<div class="lesson-worked"><h3>Work through one example</h3><p data-language-fixed>${E(s.roleExample||x.example)}</p>${s.roleModel?`<p><b>In ${E(c.name)}:</b> ${E(s.roleModel)}</p><p>${E(s.roleModelContext)}</p>`:''}</div>`}<details><summary>Full explanation & original example</summary><p><b>Original topic:</b> ${E(x.title)}</p>${s.core?.length?`<div class="ac-model"><strong>Mental model</strong><p>${E(x.model)}</p><p class="help"><b>Limit:</b> ${E(x.limit)}</p></div>`:''}<p>${E(s.reading)}</p><p data-language-fixed>${E(x.example)}</p>${s.roleModel&&s.core?.length?`<p>${E(s.roleModel)}</p><p>${E(s.roleModelContext)}</p>`:''}</details>${glossary(l)}`}<details class="lesson-goal"><summary>Guidance for your goal</summary><label for="lessonLens">Your learning goal</label><select id="lessonLens">${[['new','New to this subject'],['seeker','Preparing for a job / interview'],['switcher','Applying experience from another role']].map(([id,label])=>`<option value="${id}" ${lens===id?'selected':''}>${label}</option>`).join('')}</select><p class="lesson-guidance">${E(s.guidance[lens])}</p><p class="help">Changes guidance, not difficulty or saved evidence.</p></details><button class="btn primary" data-ac-pane="practice">Next: practise this topic →</button></section>
@@ -2313,7 +2473,7 @@ const LessonWorkspace=(()=>{
   <section id="lesson-panel-help" data-lesson-panel="help" aria-labelledby="lesson-stage-help" ${pane==='help'?'':'hidden'}><h3>Help with this topic</h3><div class="top-actions"><a class="btn" href="${E(href(c,l,i,'hint'))}">Get a hint</a><a class="btn" href="${E(href(c,l,i))}">Open topic tutor</a><a class="btn" href="${E(href(c,l,i,'quiz',true))}">Quiz & review plan</a></div><p class="help">Answers start with authored course notes. Optional Qwen suggests relevant lessons; check the linked sources.</p><ul>${s.sources.map(id=>{const a=ACADEMY_DATA.sources[id];return `<li><a href="${E(a.url)}" target="_blank" rel="noopener noreferrer">${E(a.title)} ↗</a></li>`}).join('')}</ul></section>
   <div class="lesson-next">${pos?`<button class="btn" data-ac-lesson="${order[pos-1]}">← Previous topic</button>`:''}${pos<order.length-1?`<button class="btn" data-ac-lesson="${order[pos+1]}">Next topic: ${E(l.lessons[order[pos+1]].title)} →</button>`:'<button class="btn" data-ac-tab="lab">Continue to the full lab →</button>'}</div></article></div>`;
  }
- return {render,panes};
+ return {render,panes,cssValues,cssDefinition,updateExperiment};
 })();
 
 // END GENERATED LESSON WORKSPACE
@@ -2420,7 +2580,9 @@ const Academy=(()=>{
  else if(b.hasAttribute('data-ac-pane'))setPane(b.dataset.acPane);
  else if(b.hasAttribute('data-ac-outline'))toggleOutline();
  else if(b.hasAttribute('data-ac-chapter')){workspace.chapter=Number(b.dataset.acChapter);setPane('learn',false);document.querySelectorAll('.lesson-subtopics button').forEach(n=>n.removeAttribute('aria-current'));b.setAttribute('aria-current','location');const n=document.getElementById('lesson-chapter-'+b.dataset.acChapter);n?.querySelector('h3')?.focus({preventScroll:true});n?.scrollIntoView({block:'start',behavior:scrollBehavior()})}
- else if(b.hasAttribute('data-ac-copy-example')){const text=document.getElementById('lessonExampleCode')?.textContent;const status=document.getElementById('lessonCopyStatus');try{navigator.clipboard.writeText(text||'').then(()=>{if(status)status.textContent='Example copied.'},()=>{if(status)status.textContent='Select and copy the example text; clipboard access is unavailable.'})}catch{if(status)status.textContent='Select and copy the example text; clipboard access is unavailable.'}}
+ else if(b.hasAttribute('data-css-part')){LessonWorkspace.updateExperiment(b)}
+ else if(b.hasAttribute('data-css-reset')){LessonWorkspace.updateExperiment(b,true)}
+ else if(b.hasAttribute('data-ac-copy-example')){const text=document.getElementById(b.dataset.acCopyExample||'lessonExampleCode')?.textContent;const status=document.getElementById('lessonCopyStatus');try{navigator.clipboard.writeText(text||'').then(()=>{b.textContent='Copied';b.setAttribute('aria-label','Code copied; copy again');if(status)status.textContent='Example copied.'},()=>{if(status)status.textContent='Select and copy the example text; clipboard access is unavailable.'})}catch{if(status)status.textContent='Select and copy the example text; clipboard access is unavailable.'}}
  else if(b.hasAttribute('data-ac-core')){workspace.chapter=Number(b.dataset.acCore);setPane('learn',false);document.querySelectorAll('.lesson-subtopics button').forEach(n=>n.removeAttribute('aria-current'));b.setAttribute('aria-current','location');const n=document.querySelectorAll('.lesson-core-topic')[Number(b.dataset.acCore)];if(n){n.open=true;n.querySelector('summary')?.focus({preventScroll:true});n.scrollIntoView({block:'start',behavior:scrollBehavior()})}}
  else if(b.hasAttribute('data-ac-lesson-quiz')){const card=TutorCourses.get(ctx.course,ctx.level).find(x=>x.kind==='lessonquiz'&&x.lesson===b.dataset.acLessonQuiz);if(card){document.getElementById('lessonQuiz').innerHTML=TutorLearning.quizHTML(card);document.querySelector('#lessonQuiz input')?.focus()}}
  else if(b.hasAttribute('data-ac-track')){library.page=1;open({track:b.dataset.acTrack,course:null});}
@@ -2442,7 +2604,7 @@ const Academy=(()=>{
  else if(b.hasAttribute('data-ac-calendar')){const start=new Date(Date.now()+300000),end=new Date(start.getTime()+focusMinutes*60000),stamp=d=>d.toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');const u=new URL('https://calendar.google.com/calendar/render');u.search=new URLSearchParams({action:'TEMPLATE',text:course().name+' · '+ctx.level+' · '+ctx.tab,dates:stamp(start)+'/'+stamp(end),details:'Study this lesson: '+location.origin+url()+'\nReview the time before saving. This is a calendar draft, not synchronization.'});window.open(u.href,'_blank','noopener,noreferrer')}
  });
  document.addEventListener('keydown',e=>{if(e.key!=='Escape')return;const menu=document.querySelector('.course-section-picker[open]');if(menu){menu.open=false;menu.querySelector('summary')?.focus()}});
- document.addEventListener('input',e=>{const t=e.target;if(t.id==='acCatalogSearch'){library.query=t.value;library.page=1;document.getElementById('acCatalogResults').innerHTML=catalogBody()}if(t.id==='acNote'){r().note=t.value;save()}if(t.id==='acResume'){r().resume=t.value;save()}if(t.id==='acWriting'&&r().session&&!r().session.finished){r().session.writing=t.value;save()}if(t.id==='acLocation')document.getElementById('acJobs').innerHTML=jobLinks(course(),t.value)});
+ document.addEventListener('input',e=>{const t=e.target;if(t.dataset?.cssControl)LessonWorkspace.updateExperiment(t);if(t.id==='acCatalogSearch'){library.query=t.value;library.page=1;document.getElementById('acCatalogResults').innerHTML=catalogBody()}if(t.id==='acNote'){r().note=t.value;save()}if(t.id==='acResume'){r().resume=t.value;save()}if(t.id==='acWriting'&&r().session&&!r().session.finished){r().session.writing=t.value;save()}if(t.id==='acLocation')document.getElementById('acJobs').innerHTML=jobLinks(course(),t.value)});
 
  document.addEventListener('change',async e=>{const t=e.target;if(t.id==='acLessonLevel'){workspace.pane='learn';open({level:t.value,tab:'learn'});}if(t.id==='acCatalogFamily'){library.family=t.value;library.page=1;document.getElementById('acCatalogResults').innerHTML=catalogBody()}if(t.id==='acCatalogLevel'){library.level=t.value;document.getElementById('acCatalogResults').innerHTML=catalogBody()}if(t.id==='lessonLens'){r().lens=t.value;save();render();const guidance=document.querySelector('.lesson-goal');if(guidance)guidance.open=true;document.getElementById('lessonLens')?.focus()}if(t.dataset.acLessonDone!==undefined){r().lessons||={};r().lessons[t.dataset.acLessonDone]=t.checked;if(!state.enrolled.includes(ctx.course))state.enrolled.push(ctx.course);save();render();document.querySelector('[data-ac-lesson-done="'+t.dataset.acLessonDone+'"]')?.focus()}if(t.dataset.acComplete){r().checks[t.dataset.acComplete]=t.checked;if(!state.enrolled.includes(course().id))state.enrolled.push(course().id);save();updateProgress()}if(t.dataset.acShared){state.shared[t.dataset.acShared]=t.checked;save();dashboard()}if(t.id==='acGoal'){state.goal=t.value;save()}if(t.id==='acFocusMinutes'||t.id==='acFocusMenuMinutes'){focusMinutes=Number(t.value);for(const id of ['acFocusMinutes','acFocusMenuMinutes']){const n=document.getElementById(id);if(n)n.value=String(focusMinutes)}if(focusPaused){focusPaused=0;focusEnd=0;focusRecord=null}syncTimerButtons()}if(t.dataset.acAnswer!==undefined&&r().session&&!r().session.finished){if(Date.now()>=r().session.deadline){r().session.finished=true;save();render()}else{r().session.answers[t.dataset.acAnswer]=Number(t.value);save()}}if(t.id==='acImport'){try{const file=t.files[0];if(!file)return;if(file.size>2000000)throw Error('Backup too large');const raw=JSON.parse(await file.text());if(raw.version!==1||!Array.isArray(raw.enrolled)||!raw.records)throw Error('Not a journey backup');state=AcademyEngine.merge(state,raw,D());notice='Journey backup merged. Existing guide progress is unchanged.';save();render()}catch{notice='Could not import this file. Choose an exported version-1 journey JSON backup.';dashboard()}}});
  document.addEventListener('learnerchange',()=>{if(course()?.lessonPath&&ctx.tab==='learn')render()});
