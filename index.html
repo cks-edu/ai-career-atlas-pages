@@ -634,9 +634,28 @@ body:not(.workspace-mode) :is(.ac-course-head h1,.catalog-heading h1,.ac-intro h
 #courseWorkspace[data-classroom-stage=start]{grid-template-rows:52px minmax(0,1fr) 0}
 #courseWorkspace[data-classroom-stage=start]>.ws-footer{display:none}
 @media(max-width:1023px){#courseWorkspace[data-classroom-stage=start]{grid-template-rows:128px minmax(0,1fr) 0}#courseWorkspace[data-classroom-stage=start] :is(.ws-sidebar,.ws-copilot){bottom:0}}
+.boot-status>.btn{font-family:'Manrope',sans-serif;font-weight:600;margin-top:10px}
 
 /* END WORKSPACE POLISH CSS */
 </style>
+<script data-atlas-load-guard>
+// BEGIN GENERATED LOAD GUARD
+/* A failed static course-file request must not leave an endless loading notice. */
+(()=>{
+ window.addEventListener('error',event=>{
+  const src=event.target?.tagName==='SCRIPT'?event.target.src:event.filename||'';
+  if(!src.includes('assets/course-data/'))return;
+  const status=document.getElementById('bootStatus');if(!status||status.dataset.failed)return;
+  status.dataset.failed='true';status.setAttribute('role','alert');
+  const title=document.createElement('strong');title.textContent='A course file could not be loaded.';
+  const message=document.createElement('small');message.textContent='Check your connection and retry. Reloading does not clear your browser storage.';
+  const retry=document.createElement('button');retry.type='button';retry.className='btn primary';retry.textContent='Retry loading';retry.addEventListener('click',()=>location.reload());
+  status.replaceChildren(title,message,retry);
+ },true);
+})();
+
+// END GENERATED LOAD GUARD
+</script>
 </head>
 <body>
 <div class="boot-status" id="bootStatus" role="status"><strong>Loading the career workspace…</strong><small>The first visit includes offline project packs. Interactive controls will be ready shortly.</small><noscript>This website needs JavaScript enabled to use its interactive tools.</noscript></div>
