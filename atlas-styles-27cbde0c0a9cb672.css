@@ -693,15 +693,18 @@ body:has(#overview.active) .profile-initial{background:#edf1e6;color:#4a6047}
 @media print{.home-library .home-welcome-scene{display:flex;height:auto;overflow:visible}.home-library .library-shelves{break-inside:avoid}}
 
 /* Keep paired shelf actions aligned and use the selected book mark on the welcome route. */
-.library-brand-mark{display:none}
-body:has(#overview.active) .ribbon-brand>.atlas-brand-mark{display:none}
-body:has(#overview.active) .ribbon-brand>.library-brand-mark{display:block;fill:none;stroke:#4a6047;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
 .home-library .library-shelf{display:flex;flex-direction:column}
 .home-library .library-shelf-summary{display:flex;flex-direction:column;flex:1;align-items:flex-start}
 .home-library .library-shelf-summary p{flex:1}
 @media(max-width:760px){.home-library .library-shelf-summary{align-items:stretch}}
 
 @media(max-width:760px){.home-library .library-shelf-summary .btn{min-height:48px}}
+
+/* Course readiness does not dim teaching material or disable saved links. */
+.course-availability{display:inline-flex;align-items:center;max-width:100%;margin-top:7px;padding:3px 7px;border-radius:5px;background:var(--brand-soft);color:var(--brand);font:600 10px/1.4 'Manrope',sans-serif;letter-spacing:.01em}
+.course-availability.is-coming-soon{background:var(--panel2);color:var(--muted)}
+.course-release-note{padding:10px 12px;border-left:2px solid var(--line);background:var(--panel2);color:var(--muted);font-size:13px;line-height:1.5}
+.card-topline{flex-wrap:wrap}.library-shelf-label>span{text-align:right}
 
 /* END LIBRARY CSS */
 /* BEGIN WORKSPACE CSS */
@@ -838,7 +841,7 @@ body.workspace-mode #learn,body.workspace-mode #academyRoot{height:100%;margin:0
 @media(hover:hover) and (prefers-reduced-motion:no-preference){
  .workspace-shell:not(.motion-reduced) :is(.wl-mental-map button,[data-ws-tutor],.wl-run-actions button,.ws-dock button){transition:transform 180ms ease,border-color 180ms ease,background 180ms ease}
  .workspace-shell:not(.motion-reduced) :is(.wl-mental-map button,[data-ws-tutor],.wl-run-actions button,.ws-dock button):not(:disabled):hover{transform:translateY(-1px);border-color:var(--stage-ink)}
- .ribbon-brand:hover .atlas-brand-mark,.workspace-shell:not(.motion-reduced) .ws-brand:hover .atlas-brand-mark{transform:rotate(12deg) scale(1.05)}
+ .ribbon-brand:hover .atlas-brand-mark,.workspace-shell:not(.motion-reduced) .ws-brand:hover .atlas-brand-mark{transform:translateY(-1px)}
 }
 @media(prefers-reduced-motion:reduce){.workspace-shell *,.workspace-shell .ws-tab-indicator,.atlas-brand-mark{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 .workspace-shell.motion-reduced *{animation:none!important;transition:none!important;scroll-behavior:auto!important}

@@ -1,19 +1,15 @@
-# AI Career Atlas
+# SkillBadi
 
 Public website: https://cks-edu.github.io/ai-career-atlas-pages/
 
-This repository publishes the static website: 65 AI and GenAI career guides, hands-on practice, portfolio projects, mock interviews, a study planner, a focus room and calendar exports.
+SkillBadi is a static, browser-based learning library for software and AI engineering. Seven courses are available with expanded lessons: Frontend, Full-stack, Backend, Java, Python, DevOps and GenAI application engineering. The remaining 127 catalogue courses are marked **Coming soon**; existing guides, bookmarks and saved work stay accessible as previews.
 
-Study progress and notes are stored in the learner's browser, not in this repository. Calendar downloads are snapshots, not a calendar-account connection. Eight source-linked concept notes and the 36-term glossary supply authored explanations, hints and ungraded quizzes without a model download. Unsupported questions state uncertainty and guide learners to related course reading.
+This release adds 90 original lessons across six existing courses, with five new lessons at each level. The full catalogue retains 134 courses and 958 lessons. Each addition includes teaching, a mental model, worked source, practical steps, expected results, a quiz, persona guidance and source links. Downloadable native exercises require their stated tools; the website does not execute Java, Python, containers or cloud deployments.
 
-Optional Qwen3-0.6B runs locally with WebGPU after an explicit model download. It only suggests known lesson IDs; generated prose, answers, commands, links and scores are never displayed. Suggestions may be irrelevant and authored content can still need correction. There is no inference server or AI API bill; device compatibility varies. The 1.7B option was removed after its verification run was interrupted. Learner profiles select plain or professional explanations. Focus mode offers 25/5, 10/2 and 50/10 rhythms with saved notes.
+All 90 downloaded reference examples were executed: 27 Node.js, 47 Python, 15 Java and one Git/shell exercise. Optional Docker/Kubernetes, hosted CI, cloud and real-model extensions require separate environments and were not executed as part of this release.
 
-The Pages workflow deploys only `index.html`, `favicon.svg`, `.nojekyll` and `assets/` from `main`.
+Study progress and notes remain local to the browser. Unified backups preserve the existing storage format and calendar identities through the rename. Tutor backups now scale with curriculum size so all 12,101 authored cards can retain valid evidence. Focus, study planning, mock interviews and calendar tools remain connected to their original routes. Google account integration requires the existing OAuth configuration and consent.
 
-Learner Settings keeps routine and reading style in one place, with job seeking as a separate preference. Career, topic, handbook chapter and lab depth are preserved in relevant links. Calendar links return to the intended career/topic. Laya is not included.
+Optional on-device Qwen uses WebGPU after an explicit model download. It selects known lesson IDs; model-generated prose, commands, links and scores are not displayed as verified answers. Learners can use authored explanations, hints and quizzes without a model. There is no inference-server or token bill, but device memory, downloads, compute and battery are still used. Laya is not included.
 
-Updated 22 October 2026 with the authored tutor boundary and adversarial-response regressions. Actual Qwen3-0.6B selection, study modes, profiles, source/Focus links and mobile layout were checked in the desktop in-app browser. Other device/browser combinations, live cloud deployments and external job availability were not validated. Source release: f9e0b85. The worker URL includes its build hash to avoid stale cached code after a refresh.
-
-Career Explorer now starts with eight everyday interests, an “I’m not sure yet” route with six examples, and plain descriptions for all 65 paths. Coding preferences and detailed filters are optional. In-session choices survive returning from a guide. Verified with all-path regression coverage and desktop/mobile browser journeys. Source release: 4c8da06. Tutor expansion is not part of this release.
-
-All 65 career guides now include beginner first concepts, foundational skills, a distinct three-step introductory exercise, deliverable, self-check and downloadable worksheet. Full role requirements remain available; introductions do not automatically complete roadmap checkpoints. All-path regression and representative student/employee, desktop/mobile browser checks passed. Source release: 02e6b29.
+The Pages workflow publishes only index.html, the hashed stylesheet, favicon.svg, .nojekyll and assets/. Source repository: https://github.com/cks-edu/fuzzy-rotary-phone. Source release: 7125c5a.
