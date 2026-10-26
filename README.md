@@ -12,4 +12,4 @@ Study progress and notes remain local to the browser. Unified backups preserve t
 
 Optional on-device Qwen uses WebGPU after an explicit model download. It selects known lesson IDs; model-generated prose, commands, links and scores are not displayed as verified answers. Learners can use authored explanations, hints and quizzes without a model. There is no inference-server or token bill, but device memory, downloads, compute and battery are still used. Laya is not included.
 
-The Pages workflow publishes only index.html, the hashed stylesheet, favicon.svg, .nojekyll and assets/. Source repository: https://github.com/cks-edu/fuzzy-rotary-phone. Source release: 7125c5a.
+The Pages workflow publishes only index.html, the hashed stylesheet, favicon.svg, .nojekyll and assets/. Source repository: https://github.com/cks-edu/fuzzy-rotary-phone. Source release: baf180a.
