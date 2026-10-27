@@ -757,6 +757,7 @@ body:has(#overview.active) .profile-initial{background:#edf1e6;color:#4a6047}
 @media(max-width:650px){.planner-edit{display:inline-flex}#studyRoot .study-layout>aside.has-plan{display:none}#studyRoot .study-layout.settings-open>aside.has-plan{display:block}#studyRoot .study-session-top{grid-template-columns:auto 1fr}#studyRoot .study-session-top h4{grid-row:2;grid-column:1/-1;font-size:14px}#studyRoot .study-session-top time{justify-self:end}#studyRoot .study-session>details>summary{min-height:32px;display:list-item}}
 .journey-resume{padding:16px}.journey-resume .eyebrow{line-height:1.4}.journey-resume h2{font-size:19px;margin:5px 0}.journey-resume p{font-size:13px;line-height:1.4;margin:5px 0 10px}.journey-resume .btn{min-height:32px;padding:6px 10px}.journey-row-actions summary{min-height:24px;line-height:1.4}
 @media(min-width:1024px){html:has(#planner.active),body:has(#planner.active){height:100dvh;overflow:hidden}#studyRoot .study-layout{align-items:stretch;grid-template-rows:minmax(0,1fr)}}
+@media(min-width:1024px){#studyRoot:not(:has(.planner-heading)){display:block;overflow:auto;overscroll-behavior:contain;padding-right:4px}}
 @media(max-width:650px){.journey-resume .btn{min-height:40px}.journey-row-actions summary{min-height:32px}}
 
 /* END LIBRARY CSS */

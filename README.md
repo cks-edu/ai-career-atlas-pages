@@ -12,6 +12,6 @@ Study progress and notes remain local to the browser. Unified backups preserve t
 
 Optional on-device Qwen uses WebGPU after an explicit model download. It selects known lesson IDs; model-generated prose, commands, links and scores are not displayed as verified answers. Learners can use authored explanations, hints and quizzes without a model. There is no inference-server or token bill, but device memory, downloads, compute and battery are still used. Laya is not included.
 
-The Pages workflow publishes only index.html, the hashed stylesheet, favicon.svg, .nojekyll and assets/. Source repository: https://github.com/cks-edu/fuzzy-rotary-phone. Source release: 7723790.
+The Pages workflow publishes only index.html, the hashed stylesheet, favicon.svg, .nojekyll and assets/. Source repository: https://github.com/cks-edu/fuzzy-rotary-phone. Source release: 596d034.
 
 The study planner now shows a selected day in a compact agenda, with availability details on demand and independent desktop scrolling. My Learning leads with the next unfinished lesson, concise saved-course rows and verified lesson evidence. Existing plan IDs, completion, notes, calendar links and backup formats are preserved. Mobile and desktop flows and regression checks were tested.
